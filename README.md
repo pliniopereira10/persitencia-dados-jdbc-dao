@@ -6,7 +6,7 @@
 ### :point_right: Peristência de dados
 
 >**Persistência de dados** é como a garantia de que **um dado salvo, poderá ser recuperado quando necessário**.  
->A duas formas mais comuns de persistir dados é  **Banco de dados_\(SQL\)_** e **arquivos_\(xml ou txt\)_**.
+>A duas formas mais comuns de persistir dados é  **Banco de dados_(SQL)_** e **arquivos_(xml ou txt)_**.
 >
 >Dados **com persistência** = **_Banco Dados_**  
 >Dados **sem persitência** = **_Memória Ram_**
