@@ -6,9 +6,9 @@
 ### :point_right: Peristência de dados
 
 >**Persistência de dados** é como a garantia de que **um dado salvo, poderá ser recuperado quando necessário**.  
->A duas formas mais comuns de persistir dados é  **Banco de dados_(SQL)_** e **arquivos_(xml ou txt)_**.
+>A duas formas mais comuns de persistir dados é  **Banco de dados_\(SQL\)_** e **arquivos_\(xml ou txt\)_**.
 >
->Dados **com persistência** = **_Banco Dados_**
+>Dados **com persistência** = **_Banco Dados_**  
 >Dados **sem persitência** = **_Memória Ram_**
 
 ### :point_right: JDBC
@@ -33,9 +33,13 @@
 >É um padrão de projeto ou uma boa prática que programação, que possibilita organizar nosso código de forma mais prática e legível, a fim,  facilitar sua alteração e leitura.
 >
 >>MVC 
+>>
 >>>Visão
+>>>
 >>>Controle
+>>>
 >>>Modelo
 >>
 >>DAO
+>>
 >>Persistencia
