@@ -43,3 +43,18 @@
 >>DAO
 >>
 >>Persistencia
+
+***
+## Passos do projeto :walking_man::walking_man:
+
+1. :scroll:  [**Criei Banco de dados baseado no Script desse Link**](https://github.com/pliniopereira10/persitencia-dados-jdbc-dao/blob/main/ScriptSql/TesteClienteDao.txt)
+2. :file_folder:  [**Adição das propriedade e dependêcias no arquivo pom.xml**](https://github.com/pliniopereira10/persitencia-dados-jdbc-dao/blob/main/pom.xml)
+3. :open_file_folder: [**Criação do pacote modelo e sua classe Cliente e atributos**](https://github.com/pliniopereira10/persitencia-dados-jdbc-dao/blob/main/src/main/java/modelo/Cliente.java)
+4. :card_file_box: [**Criação do pacote dao e sua classe ClienteDao e métodos**](https://github.com/pliniopereira10/persitencia-dados-jdbc-dao/blob/main/src/main/java/dao/ClienteDao.java)
+5. :medal_sports:  [**Criação do pacote aplicação e a classe Programa para executar  operações**](https://github.com/pliniopereira10/persitencia-dados-jdbc-dao/blob/main/src/main/java/aplicacao/Programa.java)
+
+***
+
+## :email: Contato
+
+Plinio da Silva Pereira - [GitHub](https://github.com/pliniopereira10) - [Linkedin](https://www.linkedin.com/in/pliniopereira10/) - plinio.pereira10@gmail.com
