@@ -5,8 +5,7 @@
 
 ### :point_right: Peristência de dados
 
->**Persistência de dados** é como a garantia de que **um dado salvo, poderá ser recuperado quando necessário**.
->
+>**Persistência de dados** é como a garantia de que **um dado salvo, poderá ser recuperado quando necessário**.  
 >A duas formas mais comuns de persistir dados é  **Banco de dados_(SQL)_** e **arquivos_(xml ou txt)_**.
 >
 >Dados **com persistência** = **_Banco Dados_**
@@ -16,8 +15,7 @@
 
 #### O que é?
 >
->O **JDBC** é uma **_biblioteca_** implementada em java que disponibiliza **_classes e interfaces_** para persistência e acesso ao **banco de dados**.
->
+>O **JDBC** é uma **_biblioteca_** implementada em java que disponibiliza **_classes e interfaces_** para persistência e acesso ao **banco de dados**.  
 >Para cada  servidor de dados(SQLServer, PostgreSQL e outros) a  **JDBC API** disponibiliza um **JDBC Driver**, a fim, da **aplicação java**  se comunicar. 
 
 #### Principais classes e interfaces JDBC
@@ -35,9 +33,9 @@
 >É um padrão de projeto ou uma boa prática que programação, que possibilita organizar nosso código de forma mais prática e legível, a fim,  facilitar sua alteração e leitura.
 >
 >>MVC 
->>> Visão
->>> Controle
->>> Modelo
+>>>Visão
+>>>Controle
+>>>Modelo
 >>
 >>DAO
 >>Persistencia
