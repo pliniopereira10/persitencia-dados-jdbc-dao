@@ -10,16 +10,15 @@ public class Programa {
 
 	public static void main(String[] args) {
 		
-		Scanner input = new Scanner(System.in);
-		
 		int indice;
 		char resposta;
 		Integer codCliente;
 		String nome;
 		String cpf;
 		String telefone;
+		Cliente novoCliente;
 		
-		ClienteDao clienteDao = new ClienteDao();
+		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Tabela Cliente");
 		
@@ -30,13 +29,13 @@ public class Programa {
 			System.out.println("Digite 3 - Para alterar dado(s) do cliente.");
 			System.out.println("Digite 4 - Para remover um cliente.");
 			indice = input.nextInt();
+			ClienteDao conexaoTabela = new ClienteDao();
 			
 			switch (indice) {
 			case 1:
 				System.out.println("Vamos listar o conteúdo da tabela Cliente.");
 				
-				ClienteDao tabela =  new ClienteDao();
-				List<Cliente> lista = tabela.listar();
+				List<Cliente> lista = conexaoTabela.listar();
 				
 				for (Cliente cliente : lista) {
 					System.out.println(cliente);
@@ -54,8 +53,8 @@ public class Programa {
 				System.out.print("Telefone do cliente: ");
 				telefone = input.nextLine();
 				
-				Cliente novoCliente = new Cliente(nome, cpf, telefone);
-				clienteDao.inserir(novoCliente);			
+				novoCliente = new Cliente(nome, cpf, telefone);
+				conexaoTabela.inserir(novoCliente);			
 				
 				break;
 				
@@ -72,8 +71,8 @@ public class Programa {
 				System.out.print("Telefone do cliente: ");
 				telefone = input.nextLine();
 				
-				Cliente antigoCliente = new Cliente(codCliente, nome, cpf, telefone);
-				clienteDao.alterar(antigoCliente);		
+				novoCliente = new Cliente(codCliente, nome, cpf, telefone);
+				conexaoTabela.alterar(novoCliente);		
 				
 				break;
 			
@@ -82,7 +81,7 @@ public class Programa {
 				input.nextLine();
 				codCliente = input.nextInt();
 				
-				clienteDao.remover(codCliente);
+				conexaoTabela.remover(codCliente);
 				System.out.println("Cliente removido");
 				
 				break;
@@ -92,13 +91,12 @@ public class Programa {
 				System.out.println("Digite umas das opções do Menu.");
 				break;
 			}
-			System.out.println();
-			System.out.print("Deseja continuar? (sim/nao): ");
+			System.out.print("\nDeseja continuar? (sim/nao): ");
 			resposta = input.next().charAt(0);
+			System.out.println();
 			
 		} while (resposta != 'n');
 		System.out.println("Acesso finalizado!!!");
-		
 		
 		input.close();
 
